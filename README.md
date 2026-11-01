@@ -1,5 +1,7 @@
 # Exactly three theta mates for a family of rank-four lattices
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23853935.svg)](https://zenodo.org/doi/10.5281/zenodo.23853935)
+
 A tensor construction over the Eisenstein integers gives, for every positive definite integral binary form
 M = (a, b, c), three even lattices L₀, L₁, L₂ of rank four with the same theta series. For generic M
 (0 < 2b < a < c) they are pairwise non-isometric. This release proves that there are no others:
@@ -56,8 +58,11 @@ Python and PARI/GP):
 - **The accepted hand proofs** are not re-proved by any program.
 
 ## Citation, credit and license
-- **Citation:** see [`CITATION.cff`](CITATION.cff). DOI: [10.5281/zenodo.23853936](https://doi.org/10.5281/zenodo.23853936), one Zenodo record holding
-  this repository's snapshot, the evidence archive and the run records.
+- **Citation:** see [`CITATION.cff`](CITATION.cff). The Zenodo record holds this repository's snapshot, the evidence
+  archive and the run records. Cite the concept DOI to refer to the work in general, or the version DOI to pin a
+  specific release:
+  - all versions: [10.5281/zenodo.23853935](https://zenodo.org/doi/10.5281/zenodo.23853935);
+  - v1.0.0: [10.5281/zenodo.23853936](https://zenodo.org/doi/10.5281/zenodo.23853936).
 - **Credit:** released by bigjokker. The work was carried out with AI assistance; the manuscript's "Authorship and
   contributions" paragraph describes each role. The reviews are AI-assisted reviews with independent computational
   replication, not peer review.

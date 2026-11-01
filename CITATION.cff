@@ -23,6 +23,13 @@ version: "1.0.0"
 date-released: "2026-11-01"
 repository-code: "https://github.com/bigjokker/rank4-exact-three"
 doi: "10.5281/zenodo.23853936"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23853935"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23853936"
+    description: "Version 1.0.0"
 keywords:
   - "isospectral lattices"
   - "theta series"
