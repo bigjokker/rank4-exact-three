@@ -12,13 +12,15 @@ hash differs.
 | sha256 | `ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f` |
 | Size | 4,678,256,640 bytes (4.7 GB) |
 | Files | 4,906 |
-| Tree manifest | `RELEASE_TREE_MANIFEST.json`, sha256 `db1d09742cec1fc48a3a603506707e09fe7277d16f49d5057ce193ed899dd590` (one row, with size and sha256, for each of the other 4,904 files; it does not list itself or
-`checksums.sha256`) |
-| Where | this release's Zenodo record, [doi:10.5281/zenodo.23853936](https://doi.org/10.5281/zenodo.23853936), file `release_tree.tar` |
+| Tree manifest | `RELEASE_TREE_MANIFEST.json`, sha256 `db1d09742cec1fc48a3a603506707e09fe7277d16f49d5057ce193ed899dd590` (one row, with size and sha256, for each of the other 4,904 files; it does not list itself or `checksums.sha256`) |
+| Published as | `release_tree.tar.xz`, xz-compressed: 809,738,804 bytes, sha256 `d8a281e5a374411a0f006e081d1e5ffe7cd0b003c9aaa2b9ac9b5329cd1f1fa8`. Decompressing it restores `release_tree.tar` byte for byte |
+| Where | this release's Zenodo record, [doi:10.5281/zenodo.23853936](https://doi.org/10.5281/zenodo.23853936), file `release_tree.tar.xz` |
 
-**Check and extract:**
+**Check, decompress and extract** (`xz -dk` keeps the compressed file):
 
-    sha256sum release_tree.tar
+    sha256sum release_tree.tar.xz    # d8a281e5a374411a0f006e081d1e5ffe7cd0b003c9aaa2b9ac9b5329cd1f1fa8
+    xz -dk release_tree.tar.xz       # writes release_tree.tar
+    sha256sum release_tree.tar       # ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f
     mkdir tree && tar -xf release_tree.tar -C tree
 
 **Start reading the tree at:**

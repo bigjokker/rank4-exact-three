@@ -28,8 +28,9 @@ complete runs of record on 31 October 2026.
 
 ## Verify
 The evidence is one frozen archive, `release_tree.tar`, sha256
-`ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f`. It is a file of this release's Zenodo record,
-[doi:10.5281/zenodo.23853936](https://doi.org/10.5281/zenodo.23853936) ([how to get and check it](docs/evidence-archive.md)).
+`ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f`. It is in this release's Zenodo record,
+[doi:10.5281/zenodo.23853936](https://doi.org/10.5281/zenodo.23853936), compressed as `release_tree.tar.xz`; decompressing it restores the
+archive byte for byte ([how to get and check it](docs/evidence-archive.md)).
 From the root of the extracted tree (on Linux, first do the setup in section 0b of the
 [verification guide](docs/verify.md): quick mode also needs the pinned x3compat r4 layer; the example needs only
 Python and PARI/GP):

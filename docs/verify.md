@@ -1,6 +1,6 @@
 # Verifying the release
 
-Verification needs the evidence archive (`docs/evidence-archive.md`). Section 0 checks and extracts it; after
+Verification needs the evidence archive (`docs/evidence-archive.md`). Section 0 checks, decompresses and extracts it; after
 section 0, run the commands from the extracted tree's root.
 
 **On Linux, do the setup of section 0b first,** before quick or full verification. A stock Python interpreter is
@@ -11,6 +11,12 @@ commands require. Environment details are in `docs/environment.md`.
 **Never run Python optimized.** `-O` and `PYTHONOPTIMIZE` are refused, because the proof checks rely on `assert`.
 
 ## 0. Check the archive
+The record holds the archive compressed as `release_tree.tar.xz`. Decompressing it restores `release_tree.tar`
+byte for byte; `xz -dk` keeps the compressed file.
+
+    sha256sum release_tree.tar.xz
+    # d8a281e5a374411a0f006e081d1e5ffe7cd0b003c9aaa2b9ac9b5329cd1f1fa8
+    xz -dk release_tree.tar.xz
     sha256sum release_tree.tar
     # ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f
     mkdir tree && tar -xf release_tree.tar -C tree && cd tree
@@ -112,7 +118,7 @@ sha256 (`a4724fa2…`):
 
 **Staging.** Start in the extracted tree. STAGE is an absolute Windows-backed staging directory (the runs of
 record used WSL 2). It contains:
-- the unchanged `release_tree.tar`;
+- the unchanged `release_tree.tar`, decompressed as in section 0;
 - the published run record `runs/ARCHIVES.json`, copied as `STAGE/ARCHIVES.json`. It is a run-record artifact,
   not an archive member, and its archive entry must name `release_tree.tar` with the hash listed above.
 

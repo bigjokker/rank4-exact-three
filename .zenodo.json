@@ -22,7 +22,7 @@
     "computer-assisted proof",
     "modular forms"
   ],
-  "notes": "Source and reader-facing pages: https://github.com/bigjokker/rank4-exact-three (tag v1.0.0). This record holds the repository snapshot rank4-exact-three-1.0.0.zip, the evidence archive release_tree.tar (sha256 ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f) and the run records of 31 October 2026, run_records_2026-10-31.tar (sha256 2689ce88024f9dc7a2e242f629290e0254d5bd00d790b8150e97663ae576ddf8), published exactly as collected.",
+  "notes": "Source and reader-facing pages: https://github.com/bigjokker/rank4-exact-three (tag v1.0.0). This record holds the repository snapshot rank4-exact-three-1.0.0.zip, the evidence archive release_tree.tar (sha256 ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f), compressed as release_tree.tar.xz (sha256 d8a281e5a374411a0f006e081d1e5ffe7cd0b003c9aaa2b9ac9b5329cd1f1fa8; decompressing it restores the archive byte for byte), and the run records of 31 October 2026, run_records_2026-10-31.tar (sha256 2689ce88024f9dc7a2e242f629290e0254d5bd00d790b8150e97663ae576ddf8), published exactly as collected.",
   "related_identifiers": [
     {
       "identifier": "https://github.com/bigjokker/rank4-exact-three/tree/v1.0.0",
