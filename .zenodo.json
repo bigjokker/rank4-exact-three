@@ -1,0 +1,33 @@
+{
+  "title": "Exactly three theta mates for a family of rank-four lattices",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "bigjokker"
+    }
+  ],
+  "license": "mit",
+  "version": "1.0.0",
+  "publication_date": "2026-11-01",
+  "language": "eng",
+  "description": "<p>A tensor construction over the Eisenstein integers gives, for every positive definite integral binary form M = (a, b, c), three even lattices L<sub>0</sub>, L<sub>1</sub>, L<sub>2</sub> of rank four with the same theta series, pairwise non-isometric for generic M (0 &lt; 2b &lt; a &lt; c).</p><p><strong>Main theorem.</strong> For integers 0 &lt; 2b &lt; a &lt; c, every positive definite lattice of rank four with the theta series of L<sub>0</sub>(a, b, c) is isometric to exactly one of L<sub>0</sub>, L<sub>1</sub>, L<sub>2</sub>. There is no bound on a, b, c and no residue condition. The theorem concerns this constructed family only; it gives no upper bound for rank-four theta fibres in general and does not treat b = 0, 2b = a or a = c. About the invariant &#9837;<sub>4</sub> the release says only: &#9837;<sub>4</sub> &ge; 3, contradicting the conjecture as stated in arXiv:2412.16709v1, which follows from the triples themselves; no upper bound is proved.</p><p>The proof is computer-assisted. Hand reductions accepted in review are combined with exact certificates, exact isometry tests and complete finite searches; independent standard-library consumers check all 27,515,815 routine branch decisions, and the nonroutine audits rely on the SMT solver z3, whose exact decisions are trusted. Every computational step has an executable route, and both manifests (170 required jobs; 117 regeneration, supporting and provenance jobs) were re-executed completely on 31 October 2026 from one frozen evidence archive, release_tree.tar, sha256 ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f.</p><p>The work was carried out with AI assistance; the included reviews are AI-assisted reviews with independent computational replication, not peer review. No literature-priority claim is made.</p>",
+  "keywords": [
+    "isospectral lattices",
+    "theta series",
+    "positive definite integral lattices",
+    "quadratic forms",
+    "Eisenstein integers",
+    "flat tori",
+    "computer-assisted proof",
+    "modular forms"
+  ],
+  "notes": "Source and reader-facing pages: https://github.com/bigjokker/rank4-exact-three (tag v1.0.0). This record holds the repository snapshot rank4-exact-three-1.0.0.zip, the evidence archive release_tree.tar (sha256 ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f) and the run records of 31 October 2026, run_records_2026-10-31.tar (sha256 2689ce88024f9dc7a2e242f629290e0254d5bd00d790b8150e97663ae576ddf8), published exactly as collected.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/bigjokker/rank4-exact-three/tree/v1.0.0",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

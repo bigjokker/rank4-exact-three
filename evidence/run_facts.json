@@ -1,0 +1,246 @@
+{
+ "source_seal": {
+  "path": "results/rank4-r42-release/final/DONE_RUNS_OF_RECORD.json",
+  "sha256": "562c9ee18acd2e3b5d541bd7340871ef7ffc228d0c3445905d54fb39af821a68"
+ },
+ "archives": {
+  "made_by": "results/rank4-r42-release/final/make_release_archive.py",
+  "time": "2026-10-31T16:02:42",
+  "tree_manifest_sha256": "db1d09742cec1fc48a3a603506707e09fe7277d16f49d5057ce193ed899dd590",
+  "files": 4906,
+  "archives": [
+   {
+    "name": "release_tree.tar",
+    "sha256": "ba42fe97adb4202a445d60f34d5b47d5c632ecc4f770790cb911acfc53ba572f",
+    "bytes": 4678256640
+   }
+  ],
+  "runner": {
+   "name": "x3_ns_run_frozen.sh",
+   "sha256": "a4724fa27c590c6af1000e47c3aa3611902a62570308f38b7c7514b86fa11a31",
+   "source": "results/rank4-r42-release/final/x3_ns_run.sh",
+   "source_sha256": "a4724fa27c590c6af1000e47c3aa3611902a62570308f38b7c7514b86fa11a31"
+  }
+ },
+ "runs": {
+  "finalR2": {
+   "manifest": {
+    "path": "mirrors/rd/tree/results/rank4-tensor-proof-package/v2/RELEASE_MANIFEST.json",
+    "sha256": "4491cd09d81bed2ff7e57a3e2052cad72257ac5718458592c7cd1c324414fbeb"
+   },
+   "report_manifest_identity": "RELEASE_MANIFEST.json sha256 4491cd09d81bed2ff7e57a3e2052cad72257ac5718458592c7cd1c324414fbeb (exact-three package v2 r9_r4, release manifest (required routes))",
+   "report_dependencies_sha256": "4491cd09d81bed2ff7e57a3e2052cad72257ac5718458592c7cd1c324414fbeb",
+   "verifier_sha256": "1df421096d990372714a9934cbf000517e0321d513fca111256cd6fac8413640",
+   "mode": "full",
+   "scope": "complete_manifest",
+   "ok": true,
+   "started": "2026-10-31T16:03:59-0400",
+   "finished": "2026-10-31T17:50:15-0400",
+   "verify_started": "2026-10-31T16:03:58-04:00",
+   "verify_finished": "2026-10-31T17:50:16-04:00",
+   "verify_exit": "verify exit 0",
+   "closing_line": [
+    "COMPLETE MANIFEST VERIFIED: all 170 jobs, quick checks and coverage OK | manifest RELEASE_MANIFEST.json sha256 4491cd09d81bed2ff7e57a3e2052cad72257ac5718458592c7cd1c324414fbeb (exact-three package v2 r9_r4, release manifest (required routes))"
+   ],
+   "jobs_selected": 170,
+   "jobs_in_manifest": 170,
+   "jobs_ok": 170,
+   "schedule": {
+    "parallel": 14,
+    "aggregate_mb": 14000,
+    "aggregate_cpu": 22,
+    "cpus": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "timeout_s": 21600
+   },
+   "portability_table": {
+    "path": "results/rank4-r42-release/map/PORTABILITY_r2.json",
+    "sha256": "7614947d91c66310b8e7ba87687a430f1fe3aed22cca5187bfd4a26d39c20167"
+   },
+   "environment": {
+    "python": "3.12.16",
+    "optimize": 0,
+    "assert_probe_exit": 1,
+    "psutil": "7.2.2",
+    "gp_version": "2.17.3",
+    "guard_sha256": "428131429af75a30bbe3069d4029937165af73959d06e108051c8b58b71017d7",
+    "x3compat": {
+     "exit": 0,
+     "version": "x3compat r4",
+     "sha256": "f2742102b646aeeb828f4b671f835a4cef224f9db19fcc10800dde6938962b88"
+    }
+   },
+   "jobs_with_linux_additions": 16,
+   "max_peak_over_limit": {
+    "job": "C2.regress.regfull",
+    "peak_MB": 1846,
+    "limit_mb": 2500,
+    "ratio": 0.74
+   },
+   "jobs_with_timeout_s": 170,
+   "max_seconds_over_timeout": {
+    "job": "T19.stream_10_main",
+    "seconds": 1426.0,
+    "timeout_s": 6766,
+    "ratio": 0.21
+   },
+   "jobs_with_inner_seconds": 46,
+   "inner_without_manifest_timeout": 42,
+   "inner_and_manifest_timeout": 4,
+   "manifest_timeout_smaller_than_inner": [
+    {
+     "job": "SOL40.C1_CHECK",
+     "inner_limit_s": 10500,
+     "manifest_timeout_s": 3073
+    },
+    {
+     "job": "SOL39.A2_VERIFY_r3",
+     "inner_limit_s": 10500,
+     "manifest_timeout_s": 2764
+    }
+   ],
+   "max_seconds_over_inner_limit": {
+    "job": "SOL40.C4_VALUE_CHECK",
+    "seconds": 4302.1,
+    "inner_limit_s": 10500,
+    "ratio": 0.41
+   },
+   "nonzero_expected_exits": []
+  },
+  "finalG3": {
+   "manifest": {
+    "path": "mirrors/rd/tree/results/rank4-tensor-proof-package/v2/REGENERATION_MANIFEST.json",
+    "sha256": "44c0c84b565bc329af7eec80302b32aabd3e497fe360b54be12a87f21c1ad89b"
+   },
+   "report_manifest_identity": "REGENERATION_MANIFEST.json sha256 44c0c84b565bc329af7eec80302b32aabd3e497fe360b54be12a87f21c1ad89b (exact-three package v2 r9_r4, regeneration manifest)",
+   "report_dependencies_sha256": "44c0c84b565bc329af7eec80302b32aabd3e497fe360b54be12a87f21c1ad89b",
+   "verifier_sha256": "1df421096d990372714a9934cbf000517e0321d513fca111256cd6fac8413640",
+   "mode": "full",
+   "scope": "complete_manifest",
+   "ok": true,
+   "started": "2026-10-31T17:55:25-0400",
+   "finished": "2026-10-31T19:37:23-0400",
+   "verify_started": "2026-10-31T17:55:23-04:00",
+   "verify_finished": "2026-10-31T19:37:23-04:00",
+   "verify_exit": "verify exit 0",
+   "closing_line": [
+    "COMPLETE MANIFEST VERIFIED: all 117 jobs, quick checks and coverage OK | manifest REGENERATION_MANIFEST.json sha256 44c0c84b565bc329af7eec80302b32aabd3e497fe360b54be12a87f21c1ad89b (exact-three package v2 r9_r4, regeneration manifest)"
+   ],
+   "jobs_selected": 117,
+   "jobs_in_manifest": 117,
+   "jobs_ok": 117,
+   "schedule": {
+    "parallel": 14,
+    "aggregate_mb": 14000,
+    "aggregate_cpu": 22,
+    "cpus": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "timeout_s": 21600
+   },
+   "portability_table": {
+    "path": "results/rank4-r42-release/map/PORTABILITY_r2.json",
+    "sha256": "7614947d91c66310b8e7ba87687a430f1fe3aed22cca5187bfd4a26d39c20167"
+   },
+   "environment": {
+    "python": "3.12.16",
+    "optimize": 0,
+    "assert_probe_exit": 1,
+    "psutil": "7.2.2",
+    "gp_version": "2.17.3",
+    "guard_sha256": "428131429af75a30bbe3069d4029937165af73959d06e108051c8b58b71017d7",
+    "x3compat": {
+     "exit": 0,
+     "version": "x3compat r4",
+     "sha256": "f2742102b646aeeb828f4b671f835a4cef224f9db19fcc10800dde6938962b88"
+    }
+   },
+   "jobs_with_linux_additions": 1,
+   "max_peak_over_limit": {
+    "job": "DIAG.diag",
+    "peak_MB": 4026,
+    "limit_mb": 5000,
+    "ratio": 0.81
+   },
+   "jobs_with_timeout_s": 117,
+   "max_seconds_over_timeout": {
+    "job": "F38.A3b.run.wall",
+    "seconds": 1188.6,
+    "timeout_s": 5761,
+    "ratio": 0.21
+   },
+   "jobs_with_inner_seconds": 40,
+   "inner_without_manifest_timeout": 34,
+   "inner_and_manifest_timeout": 6,
+   "manifest_timeout_smaller_than_inner": [
+    {
+     "job": "SOL40.C1_EMIT",
+     "inner_limit_s": 10500,
+     "manifest_timeout_s": 7094
+    },
+    {
+     "job": "SOL39.A2_EMIT",
+     "inner_limit_s": 10500,
+     "manifest_timeout_s": 6253
+    }
+   ],
+   "max_seconds_over_inner_limit": {
+    "job": "SOL40.C4_PARALLEL_EMIT",
+    "seconds": 3674.7,
+    "inner_limit_s": 10500,
+    "ratio": 0.35
+   },
+   "nonzero_expected_exits": [
+    {
+     "job": "SOL40.C4_ORIGINAL_INTENTIONAL_STOP",
+     "exit": 78,
+     "expect_exit": 78,
+     "ok": true
+    }
+   ]
+  }
+ }
+}
